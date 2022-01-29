@@ -77,7 +77,6 @@ jobs:
         mkdir release/artifacts
         cd release
         mv * ..
-        mv ${{ matrix.package-file }} ..
         cd ..
         7z a * ${{ matrix.package-file }}
         mv ${{ matrix.package-full-file }} release/artifacts
