@@ -1,10 +1,6 @@
 name: Client & Server Build
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push, pull_request, fork]
 
 jobs:
   build-cmake:
