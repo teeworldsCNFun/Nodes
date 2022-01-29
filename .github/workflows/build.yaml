@@ -78,7 +78,7 @@ jobs:
         cd release
         mv * ..
         cd ..
-        7z a * ${{ matrix.package-file }}
+        7z a * ${{ matrix.package-file }} -r
         mv ${{ matrix.package-file }} release/artifacts
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2-preview
